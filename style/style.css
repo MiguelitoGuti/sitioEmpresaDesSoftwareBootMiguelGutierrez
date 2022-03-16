@@ -188,7 +188,7 @@ footer div p{
     padding: 5px 25px 5px 25px;
     text-align: justify;
     font-family: 'Faustina', serif;
-    width: 600px;
+    width: 860px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -338,23 +338,31 @@ section#valores{
     "main valores"
     "footer footer";
     grid-template-columns: auto 350px;
-    grid-template-rows: 110px 118px 548px 282px;
+    grid-template-rows: 110px 118px auto 282px;
 }
 
 .cajaValores{
     background-color: rgb(40,43,30);
-    width: 300px;
-    height: 150px;
+    width: 350px;
+    height: 156px;
     margin-left: 15px;
     margin-right: 15px;
-    margin-top: 16.5px;
-    margin-bottom: 16.5px;
+    margin-top: 10px;
+}
+
+.cajaValoresLista{
+    background-color: rgb(40,43,30);
+    width: 350px;
+    height: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 
 .alineacionCajasValores{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content:space-between;
 }
 
@@ -364,9 +372,9 @@ section#valores{
     font-size: 16px;
     font-family: 'Faustina', serif;
     display: block;
-    width: 235px;
-    margin-left: 40px;    
-    margin-right: 40px;
+    width: 310px;
+    margin-left: 10px;    
+    margin-right: 10px;
     text-align: justify;
 }
 
