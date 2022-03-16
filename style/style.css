@@ -231,15 +231,18 @@ footer div p{
 }
 
 .cajaServicios:hover{
-    animation: animacionServicios 5s;
+    animation: animacionServicios 10s;
 }
 
 @keyframes animacionServicios{
     0%{
-        transform: translate(20px,20px);
+        background-image: linear-gradient(45deg, #085078, #85d8ce);
     }
     50%{
-        background-image: linear-gradient(45deg, #085078, #85d8ce);
+        border-style: solid;
+        border-width: 5px;
+        border-color:#37b5c0;
+        transform: scale(1.1);
     }
 }
 
@@ -457,5 +460,40 @@ section#valores{
         transition: all 1s;
         height: 300px;
         margin-bottom: 30px;
+    }
+
+    .gridNosotros{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "tituloCentral"
+        "main"
+        "valores"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: 110px 118px 547px 547px auto; 
+    }
+
+    .cajaPrincSistemas{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        flex-wrap:wrap;
+        align-items: center;
+    }
+
+    .tamanioCajaContacto{
+        width: 330px;
+    }
+
+    .gridClientes{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "tituloCentral"
+        "mainClientes"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: 110px 118px auto auto;
     }
 }
